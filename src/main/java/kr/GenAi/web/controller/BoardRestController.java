@@ -17,7 +17,8 @@ import kr.GenAi.web.service.BoardService;
 
 @RestController
 @RequestMapping("/api/board")
-@CrossOrigin(origins = "http://127.0.0.1:5500", allowedHeaders = "*")
+//@CrossOrigin(origins = "http://127.0.0.1:5500", allowedHeaders = "*")
+@CrossOrigin(origins = "http://10.1.1.6", allowedHeaders = "*") // 내부에러 통신만 하여 비공인IP(PUB)만 작성
 public class BoardRestController {
 	
 	@Autowired
